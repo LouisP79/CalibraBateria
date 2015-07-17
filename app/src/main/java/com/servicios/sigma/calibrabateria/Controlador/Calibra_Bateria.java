@@ -1,5 +1,6 @@
 package com.servicios.sigma.calibrabateria.Controlador;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -42,6 +43,12 @@ public class Calibra_Bateria extends ActionBarActivity implements View.OnClickLi
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()){
+            case R.id.action_info:
+                Intent intent2 =
+                        new Intent(this, Acerca_De.class);
+                startActivity(intent2);
+                finish(); // La cerramos.
+                return true;
             case R.id.action_Salir:
                 finish();
                 return true;
