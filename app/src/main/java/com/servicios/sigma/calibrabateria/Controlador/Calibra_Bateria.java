@@ -65,7 +65,6 @@ public class Calibra_Bateria extends ActionBarActivity implements View.OnClickLi
             case R.id.btn_Calibrar:
                     boolean error = this.calibrador.Calibrar();
                     if(error == false){
-                        Mensaje_Nube("Calibración Exitosa, Reiniciando...");
                         try{
                             Process p = Runtime.getRuntime().exec("su -c reboot");
                             p.waitFor();

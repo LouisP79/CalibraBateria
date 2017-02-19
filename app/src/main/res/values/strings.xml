@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">Calibra Bateria</string>
-    <string name="hello_world">Hola Mundo!</string>
-    <string name="action_settings">Configuración</string>
     <string name="title_activity_acerca__de">Acerca De</string>
 </resources>

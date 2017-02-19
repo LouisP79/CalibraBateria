@@ -12,17 +12,16 @@ public class Calibrador {
     }
 
     public boolean Calibrar() {
-        boolean error = false;
         try {
             Process p = Runtime.getRuntime().exec(CMD);
             p.waitFor();
             if(p.exitValue()==255){
-                error = true;
+                return true;
             }
         } catch (Exception e) {
-            error = true;
+            return false;
         }
-        return error;
+        return false;
     }
 
 }
